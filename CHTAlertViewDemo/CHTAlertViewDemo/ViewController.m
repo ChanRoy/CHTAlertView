@@ -23,9 +23,14 @@
     
     UIImage *image = [UIImage imageNamed:@"phoneIcon"];
     
-#if 0
-    CHTAlertView *alertView = [[CHTAlertView alloc]initWithTitle:@"88888888" titleIcon:image message:@"make a phone call" cancelButtonTitle:@"cancel" confirmButtonTitle:@"OK" completionBlock:^(NSUInteger buttonIndex, CHTAlertView *alertView) {
-        
+#if 1
+    CHTAlertView *alertView = [[CHTAlertView alloc]initWithTitle:@"88888888"
+                                                       titleIcon:image
+                                                         message:@"make a phone call"
+                                               cancelButtonTitle:@"cancel"
+                                              confirmButtonTitle:@"OK"
+                                                 completionBlock:^(NSUInteger buttonIndex, CHTAlertView *alertView) {
+        //button click event
         NSLog(@"%ld",buttonIndex);
         
     }];
@@ -33,8 +38,14 @@
     [alertView show];
 #else
     
-    [CHTAlertView showWithTitle:@"88888888" titleIcon:image message:@"make a phone call" cancelButtonTitle:@"cancel" confirmButtonTitle:@"OK" completionBlock:^(NSUInteger buttonIndex, CHTAlertView *alertView) {
+    [CHTAlertView showWithTitle:@"88888888"
+                      titleIcon:image
+                        message:@"make a phone call"
+              cancelButtonTitle:@"cancel"
+             confirmButtonTitle:@"OK"
+                completionBlock:^(NSUInteger buttonIndex, CHTAlertView *alertView) {
         
+                    //button click event
         NSLog(@"%ld",buttonIndex);
     }];
     

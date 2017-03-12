@@ -10,14 +10,14 @@
 
 @interface CHTAlertView : UIControl
 
-- (instancetype)initWithTitle:(NSString *)title //必填
+- (instancetype)initWithTitle:(NSString *)title
                     titleIcon:(UIImage *)icon
                       message:(NSString *)message
             cancelButtonTitle:(NSString *)cancelButtonTitle
            confirmButtonTitle:(NSString *)confirmButtonTitle
               completionBlock:(void (^)(NSUInteger buttonIndex, CHTAlertView *alertView))block NS_DESIGNATED_INITIALIZER;
 
-+ (id)showWithTitle:(NSString *)title //必填
++ (id)showWithTitle:(NSString *)title
           titleIcon:(UIImage *)icon
             message:(NSString *)message
   cancelButtonTitle:(NSString *)cancelButtonTitle

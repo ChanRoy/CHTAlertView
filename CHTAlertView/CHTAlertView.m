@@ -38,6 +38,7 @@ alpha:1.0]
     CGRect _frame;
 }
 
+//instance method
 - (instancetype)initWithTitle:(NSString *)title //必填
                     titleIcon:(UIImage *)icon
                       message:(NSString *)message
@@ -65,6 +66,7 @@ alpha:1.0]
     return self;
 }
 
+//class method
 + (id)showWithTitle:(NSString *)title 
                     titleIcon:(UIImage *)icon
                       message:(NSString *)message
