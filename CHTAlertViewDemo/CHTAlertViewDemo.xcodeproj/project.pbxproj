@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE8787DC1E75311200559905 /* CHTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8787DB1E75311200559905 /* CHTAlertView.m */; };
 		AEB83AD01E73A1CD00A74A76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB83ACF1E73A1CD00A74A76 /* main.m */; };
 		AEB83AD31E73A1CD00A74A76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB83AD21E73A1CD00A74A76 /* AppDelegate.m */; };
 		AEB83AD61E73A1CD00A74A76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB83AD51E73A1CD00A74A76 /* ViewController.m */; };
 		AEB83AD91E73A1CD00A74A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB83AD71E73A1CD00A74A76 /* Main.storyboard */; };
 		AEB83ADB1E73A1CD00A74A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB83ADA1E73A1CD00A74A76 /* Assets.xcassets */; };
 		AEB83ADE1E73A1CD00A74A76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB83ADC1E73A1CD00A74A76 /* LaunchScreen.storyboard */; };
-		AEB83AEE1E73AB3F00A74A76 /* CHTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB83AED1E73AB3F00A74A76 /* CHTAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE8787DA1E75311200559905 /* CHTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTAlertView.h; sourceTree = "<group>"; };
+		AE8787DB1E75311200559905 /* CHTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTAlertView.m; sourceTree = "<group>"; };
 		AEB83ACB1E73A1CD00A74A76 /* CHTAlertViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHTAlertViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB83ACF1E73A1CD00A74A76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AEB83AD11E73A1CD00A74A76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,8 +29,6 @@
 		AEB83ADA1E73A1CD00A74A76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEB83ADD1E73A1CD00A74A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEB83ADF1E73A1CD00A74A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEB83AEC1E73AB3F00A74A76 /* CHTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTAlertView.h; sourceTree = "<group>"; };
-		AEB83AED1E73AB3F00A74A76 /* CHTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +42,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE8787D91E75311200559905 /* CHTAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				AE8787DA1E75311200559905 /* CHTAlertView.h */,
+				AE8787DB1E75311200559905 /* CHTAlertView.m */,
+			);
+			name = CHTAlertView;
+			path = ../../CHTAlertView;
+			sourceTree = "<group>";
+		};
 		AEB83AC21E73A1CD00A74A76 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +71,7 @@
 		AEB83ACD1E73A1CD00A74A76 /* CHTAlertViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AE8787D91E75311200559905 /* CHTAlertView */,
 				AEB83AD11E73A1CD00A74A76 /* AppDelegate.h */,
 				AEB83AD21E73A1CD00A74A76 /* AppDelegate.m */,
 				AEB83AD41E73A1CD00A74A76 /* ViewController.h */,
@@ -70,8 +81,6 @@
 				AEB83ADC1E73A1CD00A74A76 /* LaunchScreen.storyboard */,
 				AEB83ADF1E73A1CD00A74A76 /* Info.plist */,
 				AEB83ACE1E73A1CD00A74A76 /* Supporting Files */,
-				AEB83AEC1E73AB3F00A74A76 /* CHTAlertView.h */,
-				AEB83AED1E73AB3F00A74A76 /* CHTAlertView.m */,
 			);
 			path = CHTAlertViewDemo;
 			sourceTree = "<group>";
@@ -158,7 +167,7 @@
 				AEB83AD61E73A1CD00A74A76 /* ViewController.m in Sources */,
 				AEB83AD31E73A1CD00A74A76 /* AppDelegate.m in Sources */,
 				AEB83AD01E73A1CD00A74A76 /* main.m in Sources */,
-				AEB83AEE1E73AB3F00A74A76 /* CHTAlertView.m in Sources */,
+				AE8787DC1E75311200559905 /* CHTAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +324,7 @@
 				AEB83AE41E73A1CD00A74A76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

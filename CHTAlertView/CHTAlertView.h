@@ -15,8 +15,20 @@
                       message:(NSString *)message
             cancelButtonTitle:(NSString *)cancelButtonTitle
            confirmButtonTitle:(NSString *)confirmButtonTitle
-              completionBlock:(void (^)(NSUInteger buttonIndex, CHTAlertView *alertView))block;
+              completionBlock:(void (^)(NSUInteger buttonIndex, CHTAlertView *alertView))block NS_DESIGNATED_INITIALIZER;
+
+- (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
+
+- (instancetype)initWithCoder:(NSCoder *)coder NS_UNAVAILABLE;
 
 - (void)show;
+
+@property (nonatomic, strong) UIColor *titleColor;
+
+@property (nonatomic, strong) UIColor *messageColor;
+
+@property (nonatomic, strong) UIColor *cancelButtonTitleColor;
+
+@property (nonatomic, strong) UIColor *confirmButtonTitleColor;
 
 @end
