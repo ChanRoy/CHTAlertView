@@ -17,6 +17,13 @@
            confirmButtonTitle:(NSString *)confirmButtonTitle
               completionBlock:(void (^)(NSUInteger buttonIndex, CHTAlertView *alertView))block NS_DESIGNATED_INITIALIZER;
 
++ (id)showWithTitle:(NSString *)title //必填
+          titleIcon:(UIImage *)icon
+            message:(NSString *)message
+  cancelButtonTitle:(NSString *)cancelButtonTitle
+ confirmButtonTitle:(NSString *)confirmButtonTitle
+    completionBlock:(void (^)(NSUInteger buttonIndex, CHTAlertView *alertView))block;
+
 - (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
 
 - (instancetype)initWithCoder:(NSCoder *)coder NS_UNAVAILABLE;

@@ -38,11 +38,6 @@ alpha:1.0]
     CGRect _frame;
 }
 
-- (void)dealloc{
-    
-    NSLog(@"dealloc");
-}
-
 - (instancetype)initWithTitle:(NSString *)title //必填
                     titleIcon:(UIImage *)icon
                       message:(NSString *)message
@@ -69,6 +64,20 @@ alpha:1.0]
     }
     return self;
 }
+
++ (id)showWithTitle:(NSString *)title 
+                    titleIcon:(UIImage *)icon
+                      message:(NSString *)message
+            cancelButtonTitle:(NSString *)cancelButtonTitle
+           confirmButtonTitle:(NSString *)confirmButtonTitle
+              completionBlock:(void (^)(NSUInteger buttonIndex, CHTAlertView *alertView))block{
+    
+    CHTAlertView *alertView = [[CHTAlertView alloc]initWithTitle:title titleIcon:icon message:message cancelButtonTitle:cancelButtonTitle confirmButtonTitle:confirmButtonTitle completionBlock:block];
+    [alertView show];
+    
+    return alertView;
+}
+
 
 - (void)initialize{
     
